@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S'mart House | Premium Fashion Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050816;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    background:#020617;
+    padding:15px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    border-bottom:2px solid gold;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    border:2px solid gold;
+}
+
+.logo h1{
+    color:gold;
+    font-size:28px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1400') center/cover;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    margin-top:80px;
+}
+
+.hero h2{
+    font-size:65px;
+    color:gold;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:20px;
+    color:#ddd;
+}
+
+.hero-btns{
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 32px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    margin:10px;
+    transition:0.3s;
+}
+
+.btn-gold{
+    background:gold;
+    color:black;
+}
+
+.btn-dark{
+    border:2px solid gold;
+    color:gold;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+/* SECTION */
+
+section{
+    padding:90px 5%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:gold;
+}
+
+/* PRODUCTS */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.product{
+    background:#0f172a;
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.4s;
+    border:1px solid #1e293b;
+}
+
+.product:hover{
+    transform:translateY(-10px);
+    border-color:gold;
+}
+
+.product img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:25px;
+}
+
+.product-info h3{
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+.price{
+    color:gold;
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+/* FEATURE */
+
+.features{
+    background:#020617;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:#0f172a;
+    padding:35px;
+    border-radius:18px;
+    text-align:center;
+    border:1px solid #1e293b;
+}
+
+.feature h3{
+    color:gold;
+    margin-top:15px;
+}
+
+/* ABOUT */
+
+.about{
+    text-align:center;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.9;
+    color:#ccc;
+    margin-top:20px;
+}
+
+/* CONTACT */
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:#0f172a;
+    padding:40px;
+    border-radius:20px;
+    border:1px solid gold;
+}
+
+.contact-box input,
+.contact-box textarea{
+    width:100%;
+    padding:16px;
+    margin-top:18px;
+    border:none;
+    border-radius:10px;
+    background:#1e293b;
+    color:white;
+    font-size:16px;
+}
+
+.contact-box button{
+    width:100%;
+    margin-top:20px;
+    padding:16px;
+    background:gold;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* FACEBOOK */
+
+.facebook{
+    background:#020617;
+    text-align:center;
+}
+
+.facebook a{
+    display:inline-block;
+    margin-top:20px;
+    text-decoration:none;
+    background:#1877f2;
+    padding:15px 35px;
+    border-radius:10px;
+    color:white;
+    font-weight:600;
+}
+
+/* FOOTER */
+
+footer{
+    background:#000814;
+    text-align:center;
+    padding:25px;
+    border-top:2px solid gold;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav a{
+        margin:8px;
+    }
+
+    .hero h2{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .section-title h2{
+        font-size:32px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+<img src="logo.png">
+<h1>S'mart House</h1>
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#features">Features</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h2>Luxury Fashion Store</h2>
+
+<p>
+Premium Clothing Collection For Smart & Stylish People
+</p>
+
+<div class="hero-btns">
+
+<a class="btn btn-gold"
+href="https://www.facebook.com/profile.php?id=61589748962798">
+Shop Now
+</a>
+
+<a class="btn btn-dark"
+href="#products">
+Explore Collection
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+<div class="section-title">
+<h2>Trending Products</h2>
+</div>
+
+<div class="product-grid">
+
+<!-- PRODUCT 1 -->
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000">
+
+<div class="product-info">
+
+<h3>Premium Hoodie</h3>
+
+<p class="price">৳ 950</p>
+
+<a class="btn btn-gold"
+href="https://wa.me/8801787436096">
+Order Now
+</a>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 2 -->
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1000">
+
+<div class="product-info">
+
+<h3>Stylish T-Shirt</h3>
+
+<p class="price">৳ 650</p>
+
+<a class="btn btn-gold"
+href="https://wa.me/8801787436096">
+Order Now
+</a>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 3 -->
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1000">
+
+<div class="product-info">
+
+<h3>Modern Fashion</h3>
+
+<p class="price">৳ 1200</p>
+
+<a class="btn btn-gold"
+href="https://wa.me/8801787436096">
+Order Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features" id="features">
+
+<div class="section-title">
+<h2>Why Choose Us</h2>
+</div>
+
+<div class="feature-grid">
+
+<div class="feature">
+<h3>Premium Quality</h3>
+<p>High quality clothing products.</p>
+</div>
+
+<div class="feature">
+<h3>Fast Delivery</h3>
+<p>Quick delivery all over Bangladesh.</p>
+</div>
+
+<div class="feature">
+<h3>Trusted Brand</h3>
+<p>Reliable fashion shopping experience.</p>
+</div>
+
+<div class="feature">
+<h3>Affordable Price</h3>
+<p>Luxury fashion at affordable prices.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="section-title">
+<h2>About S'mart House</h2>
+</div>
+
+<p>
+
+S'mart House is a modern clothing and fashion brand in Bangladesh.
+We provide premium quality stylish clothing for smart people.
+Our mission is to deliver luxury fashion with affordable prices and trusted service.
+
+</p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="section-title">
+<h2>Contact Us</h2>
+</div>
+
+<div class="contact-box">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button>Send Message</button>
+
+</div>
+
+</section>
+
+<!-- FACEBOOK -->
+
+<section class="facebook">
+
+<div class="section-title">
+<h2>Follow Our Facebook Page</h2>
+</div>
+
+<a href="https://www.facebook.com/profile.php?id=61589748962798">
+Visit Facebook Page
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 S'mart House | All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+</html>
