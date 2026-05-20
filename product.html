@@ -1,0 +1,398 @@
+# Smart House – Product Section HTML
+
+```html
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart House Products</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+      padding:30px;
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:40px;
+      color:#111;
+    }
+
+    .section-title{
+      margin:40px 0 20px;
+      color:#222;
+      border-left:6px solid #000;
+      padding-left:12px;
+      font-size:28px;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-6px);
+    }
+
+    .card img{
+      width:100%;
+      height:280px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:15px;
+    }
+
+    .card h3{
+      font-size:20px;
+      margin-bottom:10px;
+      color:#111;
+    }
+
+    .price{
+      color:green;
+      font-size:22px;
+      font-weight:bold;
+      margin-bottom:10px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:black;
+      color:white;
+      text-decoration:none;
+      padding:10px 16px;
+      border-radius:8px;
+      margin-top:10px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>SMART HOUSE - PREMIUM COLLECTION</h1>
+
+<!-- World Cup Jerseys -->
+<h2 class="section-title">⚽ World Cup Jerseys</h2>
+<div class="products">
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/Screenshot_22.png" alt="Argentina Jersey">
+    <div class="card-content">
+      <h3>Argentina Jersey</h3>
+      <div class="price">৳ 350</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/Screenshot_23.png" alt="Brazil Jersey">
+    <div class="card-content">
+      <h3>Brazil Jersey</h3>
+      <div class="price">৳ 350</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/Screenshot_24.png" alt="Germany Jersey">
+    <div class="card-content">
+      <h3>Germany Jersey</h3>
+      <div class="price">৳ 350</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/Screenshot_25.png" alt="France Jersey">
+    <div class="card-content">
+      <h3>France Jersey</h3>
+      <div class="price">৳ 350</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/Screenshot_26.png" alt="Spain Jersey">
+    <div class="card-content">
+      <h3>Spain Jersey</h3>
+      <div class="price">৳ 350</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/Screenshot_27.png" alt="Portugal Jersey">
+    <div class="card-content">
+      <h3>Portugal Jersey</h3>
+      <div class="price">৳ 350</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Panjabi -->
+<h2 class="section-title">🕌 Premium Panjabi</h2>
+<div class="products">
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/ChatGPT%20Image%20May%2020,%202026,%2007_01_29%20PM.png" alt="Panjabi 1">
+    <div class="card-content">
+      <h3>Black Premium Panjabi</h3>
+      <div class="price">৳ 999</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/%E0%A7%9C.png" alt="Panjabi 2">
+    <div class="card-content">
+      <h3>White Eid Panjabi</h3>
+      <div class="price">৳ 999</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/ChatGPT%20Image%20May%2020,%202026,%2006_57_55%20PM.png" alt="Panjabi 3">
+    <div class="card-content">
+      <h3>Stylish Blue Panjabi</h3>
+      <div class="price">৳ 999</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Men's Shirts -->
+<h2 class="section-title">👔 Men's Shirts</h2>
+<div class="products">
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/Screenshot_30.png" alt="Shirt 1">
+    <div class="card-content">
+      <h3>Formal Shirt</h3>
+      <div class="price">৳ 1350</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/Screenshot_29.png" alt="Shirt 2">
+    <div class="card-content">
+      <h3>Casual Shirt</h3>
+      <div class="price">৳ 1250</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/Screenshot_28.png" alt="Shirt 3">
+    <div class="card-content">
+      <h3>Premium Shirt</h3>
+      <div class="price">৳ 1500</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/Screenshot_27.png" alt="Shirt 4">
+    <div class="card-content">
+      <h3>Luxury Shirt</h3>
+      <div class="price">৳ 1700</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="file:///C:/Users/Shakil%20Ahmed/Downloads/Screenshot_26.png" alt="Shirt 5">
+    <div class="card-content">
+      <h3>Modern Shirt</h3>
+      <div class="price">৳ 1450</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Pants -->
+<h2 class="section-title">👖 Stylish Pants</h2>
+<div class="products">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=1200" alt="Pant 1">
+    <div class="card-content">
+      <h3>Blue Jeans</h3>
+      <div class="price">৳ 1800</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?q=80&w=1200" alt="Pant 2">
+    <div class="card-content">
+      <h3>Black Pant</h3>
+      <div class="price">৳ 1650</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Women's 3 Piece -->
+<h2 class="section-title">👗 Women's Eid Collection</h2>
+<div class="products">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200" alt="3 Piece 1">
+    <div class="card-content">
+      <h3>Luxury 3 Piece</h3>
+      <div class="price">৳ 2850</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200" alt="3 Piece 2">
+    <div class="card-content">
+      <h3>Eid Special Dress</h3>
+      <div class="price">৳ 3200</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200" alt="3 Piece 3">
+    <div class="card-content">
+      <h3>Premium Ladies Set</h3>
+      <div class="price">৳ 2900</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200" alt="3 Piece 4">
+    <div class="card-content">
+      <h3>Elegant Fashion Dress</h3>
+      <div class="price">৳ 3500</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200" alt="3 Piece 5">
+    <div class="card-content">
+      <h3>Exclusive Eid Collection</h3>
+      <div class="price">৳ 3800</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Burkha -->
+<h2 class="section-title">🖤 Premium Burkha</h2>
+<div class="products">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200" alt="Burkha 1">
+    <div class="card-content">
+      <h3>Black Abaya</h3>
+      <div class="price">৳ 2500</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200" alt="Burkha 2">
+    <div class="card-content">
+      <h3>Elegant Burkha</h3>
+      <div class="price">৳ 2800</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200" alt="Burkha 3">
+    <div class="card-content">
+      <h3>Dubai Style Burkha</h3>
+      <div class="price">৳ 3200</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200" alt="Burkha 4">
+    <div class="card-content">
+      <h3>Premium Stone Burkha</h3>
+      <div class="price">৳ 3600</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200" alt="Burkha 5">
+    <div class="card-content">
+      <h3>Luxury Abaya</h3>
+      <div class="price">৳ 3900</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Hijab -->
+<h2 class="section-title">🧕 Stylish Hijab</h2>
+<div class="products">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200" alt="Hijab 1">
+    <div class="card-content">
+      <h3>Premium Hijab</h3>
+      <div class="price">৳ 850</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200" alt="Hijab 2">
+    <div class="card-content">
+      <h3>Soft Silk Hijab</h3>
+      <div class="price">৳ 950</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200" alt="Hijab 3">
+    <div class="card-content">
+      <h3>Eid Collection Hijab</h3>
+      <div class="price">৳ 1100</div>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
